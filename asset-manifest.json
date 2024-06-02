@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/neelknight.github.io/react-loginpage/static/css/main.0d33c34a.css",
-    "main.js": "/neelknight.github.io/react-loginpage/static/js/main.830b0333.js",
-    "index.html": "/neelknight.github.io/react-loginpage/index.html",
-    "main.0d33c34a.css.map": "/neelknight.github.io/react-loginpage/static/css/main.0d33c34a.css.map",
-    "main.830b0333.js.map": "/neelknight.github.io/react-loginpage/static/js/main.830b0333.js.map"
+    "main.css": "/neelknight.github.io/ReactLoginPage/static/css/main.0d33c34a.css",
+    "main.js": "/neelknight.github.io/ReactLoginPage/static/js/main.830b0333.js",
+    "index.html": "/neelknight.github.io/ReactLoginPage/index.html",
+    "main.0d33c34a.css.map": "/neelknight.github.io/ReactLoginPage/static/css/main.0d33c34a.css.map",
+    "main.830b0333.js.map": "/neelknight.github.io/ReactLoginPage/static/js/main.830b0333.js.map"
   },
   "entrypoints": [
     "static/css/main.0d33c34a.css",
