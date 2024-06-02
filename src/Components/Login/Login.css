@@ -1,0 +1,237 @@
+:root {
+	--black: #343434;
+	--blue: #4285f4;
+	--green: #16de00;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 400px;
+	background: seashell;
+	border-radius: 5px;
+	color: var(--black);
+}
+
+.wrapper .login-box {
+	width: 100%;
+	padding: 40px;
+}
+
+form {
+	text-align: center;
+}
+
+form h1 {
+	margin-top: 30px;
+	font-size: 36px;
+	text-align: left;
+	text-decoration: underline;
+	text-underline-offset: 0.5rem;
+}
+
+form .input-box {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 50px 0;
+}
+
+.input-box input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	outline: none;
+	border: 2px solid rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+	font-size: 16px;
+	color: var(--black);
+	padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+	color: var(--black);
+}
+
+.input-box input:-webkit-autofill,
+.input-box input:-webkit-autofill:hover,
+.input-box input:-webkit-autofill:focus,
+.input-box input:-webkit-autofill:active {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: var(--black);
+	box-shadow: inset 0 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+form .input-box.success input {
+	border-color: var(--green);
+}
+
+form .input-box.error input {
+	border-color: red;
+}
+
+.input-box .input-icon {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	translate: 0 -50%;
+	font-size: 20px;
+}
+
+small .info-icon {
+	margin-right: 5px;
+	translate: 0 2px;
+}
+
+.input-box small {
+	color: red;
+	display: inline;
+	float: left;
+	margin: 5px 5px 0 5px;
+	visibility: hidden;
+}
+
+form .input-box.error small {
+	visibility: visible;
+}
+
+form button {
+	width: 100%;
+	height: 50px;
+	background: var(--blue);
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	color: var(--black);
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	transition: all 0.5s ease;
+}
+
+form button:hover {
+	opacity: 0.9;
+}
+
+form .separator {
+	width: 100%;
+	color: var(--black);
+	text-align: center;
+	padding: 20px;
+}
+
+.separator .p-lines {
+	max-width: 100%;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.separator .p-lines::before {
+	content: " ";
+	display: block;
+	height: 2px;
+	width: 40%;
+	position: absolute;
+	top: 55%;
+	left: 0;
+	background-color: var(--black);
+}
+
+.separator .p-lines::after {
+	content: " ";
+	display: inline;
+	height: 2px;
+	width: 40%;	
+	position: absolute;
+	top: 55%;
+	right: 0;
+	background-color: var(--black);
+}
+
+.gbutton-wrapper {
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+
+.gbutton-wrapper button {
+	padding-left: 10px;
+	width: 80%;
+	background-color: var(--blue);
+}
+
+.gbutton-wrapper button:hover {
+	opacity: 1.0;
+}
+
+.gbutton-wrapper .input-icon  {
+	position: absolute;
+	display: flex;	
+	left: 54px;
+	top: 50%;
+	translate: 0 -50%;
+	font-size: 40px;
+	background-color: white;
+}
+
+@media screen and (max-width: 1440px) {
+	
+	.gbutton-wrapper .input-icon  {
+		left: 42px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	
+	.gbutton-wrapper button {
+		padding-left: 20px;
+	}
+
+	.gbutton-wrapper .input-icon  {
+		font-size: 32px;
+		left: 32px;
+	}
+}
+
+@media screen and (max-width: 740px) {
+
+	.gbutton-wrapper .input-icon  {
+		left: 46px;
+		font-size: 34px;
+	}
+}
+
+@media screen and (max-height: 590px) {
+
+	form h1 {
+		margin-top: 20px;
+		font-size: 28px;
+	}
+
+	form .input-box {
+		margin: 30px 0;
+	}
+
+	form button {
+		margin-bottom: 10px;
+	}
+
+	.separator .p-lines {
+		margin-bottom: 10px;
+	}
+
+	form .separator {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.gbutton-wrapper .input-icon  {
+		display: none;
+	}
+}

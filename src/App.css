@@ -1,0 +1,114 @@
+:root {
+	--black: #343434;
+	--darkblue: #010E4F;
+	--blue: #4285f4;
+}
+
+.App {
+	text-align: center;
+}
+
+.page-wrapper {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--darkblue);
+	justify-content: center;
+	align-items: center;
+}
+
+.central-viewport {
+	height: 80vh;
+	width: 90%;
+	position: fixed;
+	left: 5%;
+	top: 10%;
+	background-color: seashell;
+	border-radius: 10px;
+}
+
+.login-viewport {
+	height: 90vh;
+	width: 30%;
+	min-width: 350px;
+	min-height: 350px;
+	position: fixed;
+	right: 10%;
+	top: 5%;
+	background-color: seashell;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	border-radius: 5px;
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	padding: 10px;
+	margin: 10px;
+	color: var(--black);
+	font-weight: 500;
+}
+
+footer a {
+	margin-left: 5px;
+	color: var(--blue);
+}
+
+.login-viewport footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	padding: 5px;
+	margin: 5px;
+	color: var(--black);
+	translate: 0 -75px;
+	font-weight: 500;
+}
+
+.login-viewport span {
+	color: red;
+}
+
+span:nth-last-child(-n+2) {
+	color: blue;
+}
+
+
+@media screen and (max-width: 740px) {
+
+	.central-viewport {
+		display: none;
+	}
+
+	.login-viewport {
+		height: 90vh;
+		width: 70%;
+		min-width: 200px;
+		left: 15%;
+	}
+}
+
+@media screen and (max-height: 640px) {
+	
+	.login-viewport footer {
+		font-size: smaller;
+		translate: 0 -60px;
+	}
+}
+
+@media screen and (max-height: 590px) {
+	.login-viewport footer {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.login-viewport {
+		height: 90vh;
+		width: 70%;
+		min-width: 200px;
+		left: 15%;
+	}
+	
+}
